@@ -44,32 +44,51 @@ namespace Practice1
             Console.WriteLine("Daily wage of employee is " + dailyWage);
         }
 
-            public void SwitchCase()
+        public void SwitchCase()
+        {
+            int dailyWage = 0, empHrs = 0;
+            int empCheck = random.Next(0, 3);
+            switch (empCheck)
             {
-                int dailyWage = 0, empHrs = 0;
-                int empCheck= random.Next(0, 3);
-                switch(empCheck)
-                {
-                    case 1:
-                        empHrs = 8;
-                        dailyWage=empHrs * WAGE_PER_HR;
-                        Console.WriteLine("Daily wage of full time employee is: {0}" ,dailyWage);
-                        break;
-                    case 2:
-                        empHrs = 4;
-                        dailyWage=empHrs * WAGE_PER_HR;
-                        Console.WriteLine("Daily wage of part time employee is: {0}" ,dailyWage);
-                        break;
-                    default:
-                        Console.WriteLine("Employee is Absent");
+                case 1:
+                    empHrs = 8;
+                    dailyWage = empHrs * WAGE_PER_HR;
+                    Console.WriteLine("Daily wage of full time employee is: {0}", dailyWage);
                     break;
+                case 2:
+                    empHrs = 4;
+                    dailyWage = empHrs * WAGE_PER_HR;
+                    Console.WriteLine("Daily wage of part time employee is: {0}", dailyWage);
+                    break;
+                default:
+                    Console.WriteLine("Employee is Absent");
+                    break;
+            }
+        }
+            public void Month()
+            {
+                const int Total_Working_Days = 20;
+            int i, totalWage = 0, dailyWage = 0, empHrs = 0;
+                for (i = 1; i <=Total_Working_Days; i++)
+                {
+                    int empCheck = random.Next(0, 3);
+                    if (empCheck == 1)
+                    {
+                        empHrs = 8;
+                    }
+                    else if (empCheck == 2)
+                    {
+                        empHrs = 4;
+                    }
+                    else
+                    {
+                        empHrs = 0;
+                    }
+                    dailyWage = empHrs * WAGE_PER_HR;
+                    totalWage = totalWage + dailyWage;
                 }
+                Console.WriteLine("Monthly wage of an employee is: " + totalWage);
 
             }
-
-            
-
-
-        
     }
 }

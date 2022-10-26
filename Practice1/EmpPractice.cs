@@ -53,12 +53,12 @@ namespace Practice1
                     case 1:
                         empHrs = 8;
                         dailyWage=empHrs * WAGE_PER_HR;
-                        Console.WriteLine("Daily wage of full time employee is: " + dailyWage);
+                        Console.WriteLine("Daily wage of full time employee is: {0}" ,dailyWage);
                         break;
                     case 2:
                         empHrs = 4;
                         dailyWage=empHrs * WAGE_PER_HR;
-                        Console.WriteLine("Daily wage of part time employee is: " + dailyWage);
+                        Console.WriteLine("Daily wage of part time employee is: {0}" ,dailyWage);
                         break;
                     default:
                         Console.WriteLine("Employee is Absent");

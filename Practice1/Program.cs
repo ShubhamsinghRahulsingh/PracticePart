@@ -6,8 +6,8 @@ namespace Practice1
         static void Main(string[] args)
         {
             Console.WriteLine("Ask us what you want to know");
-            EmpPractice employeeS = new EmpPractice();
-            employeeS.SwitchCase();
+            switchcase employee = new switchcase();
+            employee.SwitchCase();
 
         }
     }

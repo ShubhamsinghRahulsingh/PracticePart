@@ -7,7 +7,7 @@ namespace Practice1
         {
             Console.WriteLine("Ask us what you want to know");
             EmpPractice employee = new EmpPractice();
-            employee.Month();
+            employee.Condition();
 
         }
     }

@@ -20,9 +20,12 @@ namespace OOPS
                         this.Change(amount);
                     }
                     else
+                    {
                         i = notes.Length;
                         Console.WriteLine("Number of notes required is: " + count);
                         return;
+                    }
+                    break;
                 }
                 else
                     i++;
